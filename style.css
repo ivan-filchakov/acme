@@ -1,0 +1,160 @@
+body {
+  font-family: Sen, sans-serif;
+  line-height: 1.5;
+  color: #333;
+}
+nav {
+  padding: 20px 0;
+  background: #eb5757;
+}
+.Container {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.Nav__Wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.Nav__Logo svg {
+  display: block;
+}
+.Cart__Nav__Wrapper {
+  display: flex;
+  align-items: center;
+  justify-items: start;
+}
+.Nav__Menu {
+  display: flex;
+}
+.Nav__Menu_Button {
+  padding: 4px 10px;
+  margin: 0 20px;
+  border-radius: 5px;
+  color: #f9f9f9;
+  transition: .3s ease;
+}
+.Nav__Menu_Button:hover {
+  background: #222;
+  cursor: pointer;
+}
+.Cart__Menu {
+  position: relative;
+}
+.Cart__Menu_Button {
+  position: relative;
+  padding: 6px 15px;
+  border-radius: 5px;
+  line-height: 1;
+  background: #222;
+  stroke: #fff;
+}
+.Cart__Menu_Button:hover {
+  cursor: pointer;
+}
+.Cart__Icon {
+  width: 20px;
+  height: auto;
+  margin-bottom: -1px;
+}
+.Cart__Quantity {
+  position: absolute;
+  top: -7px;
+  right: -7px;
+  width: 18px;
+  height: 18px;
+  line-height: 18px;
+  border-radius: 100%;
+  font-size: 11px;
+  font-weight: 700;
+  text-align: center;
+  color: #222;
+  background: #fff;
+}
+
+/* ----------------------------------------------------  ****/
+@keyframes fadeIn {
+  0% {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.Cart__Menu:hover > .Cart__Dropdown__Container {
+  display: block;
+  animation: fadeIn .4s ease;
+}
+.Cart__Dropdown__Container {
+  display: none;
+  position: absolute;
+  right: 0;
+  width: 400px;
+  max-height: 400px;
+  border-radius: 10px;
+  overflow: auto;
+  box-shadow: 0 8px 32px rgba(0,0,0,.1);
+}
+  .Cart__Dropdown__Container::-webkit-scrollbar {
+  display: none;
+}
+.Cart_Dropdown__Wrapper {
+  padding: 12px;
+  background: #fff;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.Dropdown__Item {
+  display: flex;
+  align-items: center;
+  justify-content: stretch;
+  padding: 8px 0;
+}
+.Item__Img {
+  height: 32px;
+  margin: 0 16px;
+}
+.Item__Descr {
+  flex: 1;
+  font-size: 12px;
+}
+.Item__Price {
+  margin: 0 12px;
+  font-weight: 700;
+}
+.Item__Controls {
+  display: flex;
+  justify-content: center;
+}
+.Item__Controls_Button {
+  margin: 0 8px;
+  fill: #aeaeae
+}
+.Item__Controls_Button:hover {
+  cursor: pointer;
+  fill: #eb5757;
+}
+.Dropdown__Total {
+  font-weight: 700;
+  display: flex;
+  justify-content: space-evenly;
+}
+.Checkout_Button {
+  padding: 6px 15px;
+  border-radius: 5px;
+  color: #f9f9f9;
+  background: #eb5757;
+}
+.Checkout_Button:hover {
+  cursor: pointer;
+  background: #e94646;
+}
+.Checkout_Button:active {
+  transform: scale(0.98);
+  transition: .1s ease;
+}
+
